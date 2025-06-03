@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetShop - Accesorios para Gatos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🐾 PetShop</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#compra">Compra</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenidos a PetShop</h2>
+    <p>Los mejores accesorios para consentir a tu gato 😻</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Envío a domicilio</li>
+      <li>Productos personalizados</li>
+      <li>Atención especializada</li>
+    </ul>
+  </section>
+
+  <section id="productos">
+    <h2>Productos</h2>
+    <div class="galeria">
+      <div class="producto">
+        <img src="https://placekitten.com/200/200" alt="Cama para gato">
+        <p>Cama suave</p>
+      </div>
+      <div class="producto">
+        <img src="https://placekitten.com/201/200" alt="Collar para gato">
+        <p>Collar elegante</p>
+      </div>
+      <div class="producto">
+        <img src="https://placekitten.com/202/200" alt="Juguete para gato">
+        <p>Juguete divertido</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="compra">
+    <h2>Compra ahora</h2>
+    <button onclick="mostrarMensaje()">¡Quiero Comprar!</button>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre"><br>
+      <label for="email">Correo:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje"></textarea><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PetShop. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+header {
+  background-color: #ff6f61;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #ff6f61;
+}
+
+.galeria {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.producto {
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e85c50;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
+
+}
+
